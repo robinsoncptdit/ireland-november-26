@@ -1,0 +1,145 @@
+configuration:
+  pageTitle: Ireland · November 2026
+  pageTitleSuffix: ""
+  enableSPA: false
+  enablePopovers: false
+  analytics: null
+  locale: en-US
+  baseUrl: robinsoncptdit.github.io/ireland-november-26
+  ignorePatterns:
+    - private
+    - AGENTS.md
+    - README.md
+  theme:
+    fontOrigin: local
+    cdnCaching: true
+    typography:
+      header: Georgia
+      body: system-ui
+      code: monospace
+    colors:
+      lightMode:
+        light: "#faf7ef"
+        lightgray: "#dfdfd2"
+        gray: "#b8b8b8"
+        darkgray: "#38483e"
+        dark: "#173b30"
+        secondary: "#28654e"
+        tertiary: "#a36e35"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#fff23688"
+      darkMode:
+        light: "#161618"
+        lightgray: "#393639"
+        gray: "#646464"
+        darkgray: "#d4d4d4"
+        dark: "#ebebec"
+        secondary: "#7b97aa"
+        tertiary: "#84a59d"
+        highlight: rgba(143, 159, 169, 0.15)
+        textHighlight: "#b3aa0288"
+plugins:
+  - source: "@quartz-community/created-modified-date"
+    enabled: true
+    options:
+      defaultDateType: modified
+      priority:
+        - frontmatter
+        - git
+        - filesystem
+    order: 10
+  - source: "@quartz-community/github-flavored-markdown"
+    enabled: true
+    order: 40
+  - source: "@quartz-community/table-of-contents"
+    enabled: true
+    order: 50
+    layout:
+      position: right
+      priority: 30
+  - source: "@quartz-community/crawl-links"
+    enabled: true
+    options:
+      markdownLinkResolution: shortest
+    order: 60
+  - source: "@quartz-community/description"
+    enabled: true
+    order: 70
+  - source: "@quartz-community/remove-draft"
+    enabled: true
+  - source: "@quartz-community/content-index"
+    enabled: true
+    options:
+      enableSiteMap: true
+      enableRSS: false
+  - source: "@quartz-community/favicon"
+    enabled: true
+  - source: "@quartz-community/content-page"
+    enabled: true
+  - source: "@quartz-community/explorer"
+    enabled: true
+    layout:
+      position: left
+      priority: 50
+  - source: "@quartz-community/search"
+    enabled: true
+    layout:
+      position: left
+      priority: 20
+      group: toolbar
+      groupOptions:
+        grow: true
+  - source: "@quartz-community/article-title"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 10
+  - source: "@quartz-community/page-title"
+    enabled: true
+    layout:
+      position: left
+      priority: 10
+  - source: "@quartz-community/darkmode"
+    enabled: true
+    layout:
+      position: left
+      priority: 30
+      group: toolbar
+  - source: "@quartz-community/footer"
+    enabled: true
+    options:
+      links:
+        Source & proposed edits: https://github.com/robinsoncptdit/ireland-november-26
+    layout:
+      position: footer
+      priority: 50
+  - source: "@quartz-community/note-properties"
+    enabled: true
+    order: 5
+    options:
+      hidePropertiesView: true
+layout:
+  groups:
+    toolbar:
+      priority: 35
+      direction: row
+      gap: 0.5rem
+  byPageType:
+    "404":
+      positions:
+        beforeBody: []
+        left: []
+        right: []
+    content: {}
+    folder:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    tag:
+      exclude:
+        - reader-mode
+      positions:
+        right: []
+    canvas: {}
+    bases: {}
