@@ -1,76 +1,106 @@
 # Ireland · November 2026
 
-A public travel guide built with **Quartz 5, GitHub Pages, Giscus and Hypothesis**. All work belongs in `~/Ireland November 2026`. Do not sync to the older Documents copy.
+A shared Ireland travel wiki built with Quartz, GitHub Pages, Giscus and Hypothesis. Wanderlog holds the adopted itinerary; the wiki holds unadopted options and fallbacks. Discussion can introduce or revise an option without adopting it into the trip.
 
-## What lives where
+**[Open the website](https://robinsoncptdit.github.io/ireland-november-26/) · [User HOWTO](HOWTO.md) · [Guide workflow](Guide%20Workflow.md) · [Website HOWTO source](content/howto.md)**
 
-- `content/`: the **only public Markdown source**, nine explicitly allowed pages. Edit these files to change the site. Their filenames are stable URLs; ordinary title edits are safe.
-- `private/originals/`: the complete original guides, full personal itinerary and WhatsApp contacts. Local only, ignored before Git initialization. Back up privately; Git cannot restore ignored files.
-- `site/`: shared reading styles, collaboration script and public integration settings. IDs here are public identifiers, never credentials.
-- `scripts/`: build, checks and local preview.
-- `quartz/`: MIT-licensed Quartz source; npm dependencies locked in `package-lock.json`.
-- `public/`: generated deployment artifact, ignored. Never edit it by hand.
-- `AGENTS.md`: local assistant instructions, ignored and excluded from Git and the website.
+The site is live and its Giscus connection is configured. Newly added pages and edits in a local branch become live only after review, merge and successful deployment.
 
-The public itinerary is a deliberate summary. Flights, hotel identities, room preferences, private cottage location, receipt references and personal contact records remain only in the complete local originals. Public business contact details and research source links remain in the guides. Dates, planned route and selected booking-status distinctions are public; review that disclosure before publishing.
+## Which document should I read?
 
-## Edit and preview
+| You want to… | Read |
+|---|---|
+| Browse, comment, annotate or learn useful chat requests | [How to use this guide](content/howto.md) |
+| Use the project in chat, handle a queue or run optional terminal commands | [HOWTO.md](HOWTO.md) |
+| Understand research roles, reviews, decisions and the publication path | [Guide Workflow.md](Guide%20Workflow.md) |
+| Build, preview, maintain or troubleshoot the site | This README |
 
-Requires Node 22+ (CI uses Node 24) and npm 10.9.2+. From this folder:
+## Project layout and sources
+
+Work in `~/Ireland November 2026`. The older Documents project is a legacy prototype, not an automatically synchronized copy.
+
+| Location | Purpose | Public? |
+|---|---|---|
+| `content/` | Sole public Markdown source; explicit page allowlist | Yes |
+| `data/guide-options.json` | Curated dated suggestions and research links for the daily guide | Yes, in repository |
+| `scripts/` | Generation, queueing, checks and preview | Yes, in repository |
+| `site/` | Reading styles and public discussion/annotation settings | Yes |
+| `quartz/` | Quartz source, with dependencies locked | Yes |
+| `HOWTO.md`, `Guide Workflow.md`, `README.md` | User/process/maintenance documentation | Yes, in repository; not site pages |
+| `private/originals/` | Complete original sources and personal planning records | No; ignored/local-only |
+| `private/trip-guide/` | Full local guide workflow, decision records and research snapshots | No; ignored/local-only |
+| `private/publish-trip-guide/` | Project-local publishing skill and validation notes | No; ignored/local-only |
+| `AGENTS.md` | Local routing and assistant instructions | No; ignored/local-only |
+| `public/` | Generated deployment artifact | Deployed, not tracked; never edit directly |
+
+Public guide filenames, URLs and Giscus terms remain stable. The public itinerary deliberately excludes personal transport/accommodation records, private location details, contacts and receipts. Research retains dates, sources and uncertainty. A regular-hours listing is not confirmed opening on our travel date.
+
+## Everyday editing and publishing
+
+Use chat for ordinary work:
+
+- **“Write this finding to the public cheap-eats guide and queue it.”** Approves that public edit and local staging.
+- **“Show the queue.”** Reports local and publication status.
+- **“Commit and push the batch.”** Saves and uploads the approved batch and opens/updates its PR, without merging.
+- **“Publish the batch.”** Requests the checked PR/merge/Pages sequence, including verification of affected live pages.
+
+Private notes stay private. An unapproved finding or comment does not authorize publication. No automatic filesystem watcher or deploy-on-save is installed. See the [HOWTO](HOWTO.md) for the complete command vocabulary and troubleshooting.
+
+The daily guide is generated from `content/itinerary.md` and `data/guide-options.json`. It does not extract new entries or factual changes from prose automatically. Update the relevant mapping when adding or revising a curated suggestion. Never overwrite the public guide with the complete private guide.
+
+## Optional terminal workflow
+
+Requires Node 22+ and npm 10.9.2+; CI uses Node 24. From the active repository:
 
 ```sh
 npm ci
+npm run guide:test
 npm run build
 npm run preview
 ```
 
-Open http://localhost:8096/ireland-november-26/ . The preview binds only to this laptop. After editing, rebuild then reload. The preview serves only `public/`, never the project root. `npm run build` cleans stale output, applies the settings, builds only `content/`, adds collaboration/canonical links, then checks the complete artifact and search index. `npm run privacy:check` repeats the checks. Source allowlists must be deliberately updated in `scripts/check.mjs` when adding a guide.
+Preview at [localhost:8096](http://localhost:8096/ireland-november-26/). Build again and reload after changes. The server binds only to this laptop and serves `public/`, not the project root. Preview is not publication; use production URLs for real comments/annotations.
 
-Keep research dates, source links, uncertainty and recorded-versus-confirmed booking distinctions. Optional stops are alternatives. A venue's regular hours do not establish opening on our travel date. Never replace public files with an automatic copy of private originals.
+From an editorial branch, stage named approved topic changes with:
 
-## Contribute and publish
+```sh
+npm run guide:stage -- content/cheap-eats.md
+npm run guide:status
+npm run guide:commit -- --message "Update food alternatives"
+```
 
-Readers need no account. **Edit this guide** opens the Markdown on GitHub. Friends can fork and propose a pull request. Repository collaborators must also use a branch and PR, not commit straight to main. Review content and privacy before merging. The workflow builds PRs but uploads and deploys **only main**, after accepted changes. It does not use `pull_request_target`, secrets or a custom backend.
+Include `data/guide-options.json` explicitly when it changes. Reviewed same-file additions can use `--reviewed-restage`; this still runs the same checks. The content-only helper excludes root documentation, code and configuration. Maintenance batches use an explicitly reviewed Git commit with equivalent tests/privacy/build checks, preserving unrelated work.
 
-The owner approved public publication on October 15, 2026. The public repository is `robinsoncptdit/ireland-november-26`; Pages uses GitHub Actions and main requires PRs with passing build checks. Initial website deployment is held until the owner installs Giscus and its connection is verified. The address is https://robinsoncptdit.github.io/ireland-november-26/ . No domain, paid hosting or trial is needed. Public GitHub repositories support free Pages hosting and standard Actions runners.
+`npm run build` regenerates the daily guide, checks public sources plus the actual index and available Git history, builds Quartz, adds collaboration/canonical links, scans output/search data and checks local links. `npm run privacy:check` rechecks the existing artifact and Git sources/history. Quick queue checks defer the full artifact/history scan until commit/publication, so small queued edits do not rebuild the entire site.
 
-Set a main-branch ruleset requiring a pull request and the `build` status check. Allow no bypass if practical, and block force pushes/deletion. With two trusted maintainers, require a reviewer other than the author; with a single maintainer, require PRs and checks without an impossible second-person approval. CI prevents PR deployment; branch rules enforce review for repository writers.
+## GitHub review and deployment
 
-Do not publish until Giscus is connected (the release check blocks publication when IDs are missing):
+The public repository is [robinsoncptdit/ireland-november-26](https://github.com/robinsoncptdit/ireland-november-26). Use branches and PRs; protected main requires the build check. Do not bypass required reviews or force-push over work.
 
-1. Enable **Settings → General → Features → Discussions** on the repository.
-2. Use the existing **Announcements** discussion category (already configured).
-3. Install the [Giscus GitHub App](https://github.com/apps/giscus) for **only this repository**. This permission step belongs to the account owner.
-4. Repository and category IDs have been discovered and saved in `site/settings.json`. On [giscus.app](https://giscus.app), enter the repository to verify that the installation is accepted. Keep the existing specific-term mapping in our script.
-5. Rebuild, run `node scripts/release-check.mjs`, preview and test the real Giscus frame. Merge the integration PR only after that connection succeeds, then watch the Pages workflow.
+The workflow tests/builds PRs without deploying them. Accepted main changes trigger a production build, discussion-configuration check and Pages deployment. Publishing must distinguish **committed**, **pushed**, **merged** and **deployed**. A successful PR build alone is not a live update. Verify the exact current head before merging and the intended main deployment afterward.
 
-Each guide uses an immutable Giscus term `ireland-2026/<filename-without-md>`, strict matching and reactions. Do not change filenames/terms after discussions exist. If moving a page, preserve the old URL with a redirect and retain its discussion term; update the build implementation deliberately. Hypothesis uses the canonical production URL, so keep URLs stable. Avoid saving test annotations from localhost because the canonical URL points at the future live guide.
+Keep PR builds without secrets or write permissions. The workflow uploads only `public/`; it does not use `pull_request_target`. The publishing skill reuses the matching open PR and avoids repeating a successful unchanged full local build solely to push it.
 
-## Annotation and navigation
+## Discussion and annotation configuration
 
-Hypothesis embeds directly; readers need no browser extension. Its sidebar starts collapsed. **Annotate this guide** reloads with `?annotate=1` and the documented `openSidebar` setting, then readers select text. Canonical URLs exclude that query. Default guide visits always start collapsed.
+`site/settings.json` contains public repository/category identifiers; no credentials belong there. Giscus is connected to GitHub Discussions in **Announcements**, using immutable specific terms `ireland-2026/<page-filename>`, strict mapping and reactions. If the connection breaks, verify Discussions, the category and the Giscus app installation for this repository, then run `node scripts/release-check.mjs` and test the production widget.
 
-Quartz client-side navigation and hover popovers are deliberately disabled. Every guide navigation gets a fresh Giscus mapping and Hypothesis document, avoiding stale annotations or comments from the previous page. Search and navigation remain enabled. Do not re-enable SPA without implementing and testing Hypothesis unload/reload and Giscus remapping on every navigation.
+Hypothesis is embedded with its sidebar initially collapsed. **Annotate this guide** reloads with `?annotate=1` and opens the sidebar; canonical URLs exclude that query. Real annotations should use production page identity. Giscus and Hypothesis remain separate accounts/conversations.
 
-Giscus and Hypothesis conversations are separate. GitHub sign-in is required to comment/react; Hypothesis sign-in is required to save annotations. Reading needs neither. Public annotations can be visible outside this site. Never paste private details into either service.
+Quartz SPA navigation and hover popovers remain disabled so each page loads fresh discussion mappings and annotation identity. Do not re-enable them without testing both integrations through navigation. If moving a guide, preserve old URLs with redirects and retain its discussion term.
 
-## Moderation
-
-Moderate Giscus in the repository's Discussions: edit/hide/delete inappropriate contributions, lock discussions and manage abusive users using GitHub controls. Monitor the category through GitHub notifications.
-
-Hypothesis public annotations belong to its service and their authors, not this repository. Authors can edit/delete their own; report abusive public annotations using Hypothesis's reporting tools. Site maintainers do not automatically have power to delete all public annotations. Agree on a private Hypothesis group if a separate invitation-only conversation is later wanted; that is not the current public default.
+GitHub maintainers can moderate Giscus through repository Discussions. Hypothesis annotations are managed through that service: authors can manage their own annotations, and inappropriate public annotations can be reported. Site ownership does not automatically grant deletion rights over everyone else's annotations.
 
 ## Privacy and maintenance
 
-`.gitignore` is not a publishing boundary. The build reads only the explicit `content/` tree, rejects symlinks/unapproved files and scans generated HTML, scripts and search data. Workflow uploads only `public/`. Before initial commit and every release, inspect the staged file list, run privacy checks and inspect the artifact. The checker scans all reachable Git commits for private paths and known personal markers. It is a guardrail, not a substitute for reading proposed changes. If private material ever enters history, stop publication and remove it from history before any push; ignoring it afterward is insufficient.
+Only allowlisted `content/` pages enter the site build. `.gitignore` alone is not a publishing boundary. Adding a public page requires deliberately updating `scripts/check.mjs`; add its queue path in `scripts/guide-queue.mjs` and fixture coverage if it should be editable through the content helper. Check navigation, search, local links, discussion mappings and the generated artifact.
 
-`private/`, `AGENTS.md`, dependencies, caches and generated output must stay untracked. The complete source originals remain local. `private/` is not encrypted: rely on laptop security and a private backup. Repository source, README, build code, public identifiers and all accepted guide changes will be publicly inspectable on GitHub.
+Before pushing, inspect the staged file list and actual diff, complete the applicable reviews, and run required checks. The checker scans public sources, the real index, reachable Git history, output and search data for prohibited paths and known private markers. It is a guardrail, not a substitute for reading proposed changes. Never include internal agent instructions, contact records or full private planning files in Git or public content.
 
-Update dependencies on a branch, review lockfile changes, build and preview before merging. Initial compatible patches resolved sharp and source-map-js warnings. On October 15, npm still reports the braces ≤3.0.3 recursion advisory through micromatch/fast-glob/globby; 3.0.3 is the latest registry version. This affects the build-time file matcher, not browser runtime. There is no patched compatible release available in that chain at this review. Keep PR builds without secrets or write permissions and recheck with `npm audit` during maintenance.
+Back up ignored planning files privately; Git cannot restore them. If private material enters Git history, stop publication and remove it from history before any push. Do not merely ignore it afterward.
 
-## Official setup references checked October 15, 2026
+Update dependencies on a branch, inspect lockfile changes, run the tests/build and check `npm audit` during maintenance. Dependency security status changes over time; do not treat a dated advisory note as current verification.
 
-- [Quartz installation](https://quartz.jzhao.xyz/getting-started/installation) and [Pages workflow](https://quartz.jzhao.xyz/hosting)
-- [GitHub Pages availability and project URLs](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
-- [Giscus setup and permissions](https://giscus.app)
-- [Hypothesis embed](https://web.hypothes.is/help/embedding-hypothesis-in-websites-and-platforms/) and [configuration](https://h.readthedocs.io/projects/client/en/latest/publishers/config.html)
+## Reference documentation
+
+The implementation is grounded in [Quartz setup](https://quartz.jzhao.xyz/getting-started/installation), [Quartz hosting](https://quartz.jzhao.xyz/hosting), [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages), [Giscus](https://giscus.app), and [Hypothesis embedding](https://web.hypothes.is/help/embedding-hypothesis-in-websites-and-platforms/). For ordinary use, follow the project HOWTO and the implemented controls rather than repeating the original installation steps.
