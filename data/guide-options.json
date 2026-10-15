@@ -1,0 +1,658 @@
+[
+  {
+    "id": "athlone-bacchus",
+    "name": "Bacchus",
+    "dates": [
+      "2026-11-02",
+      "2026-11-10"
+    ],
+    "category": "food",
+    "summary": "Optional riverside dinner; published service includes Monday and Tuesday evenings. No reservation established.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "1. Athlone — November 2 and 10"
+  },
+  {
+    "id": "athlone-seans-bar",
+    "name": "Sean’s Bar",
+    "dates": [
+      "2026-11-02",
+      "2026-11-10"
+    ],
+    "category": "drink",
+    "summary": "Optional history-and-pint stop; music on the visit dates is not confirmed.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "1. Athlone — November 2 and 10"
+  },
+  {
+    "id": "athlone-soho",
+    "name": "Soho Asian Street Food",
+    "dates": [
+      "2026-11-02",
+      "2026-11-10"
+    ],
+    "category": "food",
+    "summary": "Practical arrival-night or return-night takeaway; spicy bag listed at €9 during research. Confirm intended evening opening.",
+    "source_file": "cheap-eats.md",
+    "source_heading": "Soho Asian Street Food"
+  },
+  {
+    "id": "roscommon-gleesons",
+    "name": "Gleeson’s",
+    "dates": [
+      "2026-11-03",
+      "2026-11-09",
+      "2026-11-10"
+    ],
+    "category": "food",
+    "summary": "Optional locally sourced meal; published menu includes seafood chowder and soda bread.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "2. Roscommon and surroundings — November 3 and 9–10"
+  },
+  {
+    "id": "roscommon-brennans-centra",
+    "name": "Brennan’s Centra, Abbeytown",
+    "dates": [
+      "2026-11-03",
+      "2026-11-09",
+      "2026-11-10"
+    ],
+    "category": "food",
+    "summary": "Daytime hot-deli option, especially before November 3 pickup at 14:00. Counter hours and prices unconfirmed; do not rely on late November 9 service.",
+    "source_file": "cheap-eats.md",
+    "source_heading": "Brennan's Centra, Abbeytown"
+  },
+  {
+    "id": "carrick-the-oarsman",
+    "name": "The Oarsman",
+    "dates": [
+      "2026-11-03"
+    ],
+    "category": "food",
+    "summary": "Optional destination dinner; Tuesday service starts at 17:00 and would mean reaching Boyle later. Do not stack with every afternoon activity.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "3. Carrick-on-Shannon, Battlebridge and Drumshanbo — November 3"
+  },
+  {
+    "id": "boyle-troy",
+    "name": "Troy",
+    "dates": [
+      "2026-11-03"
+    ],
+    "category": "food",
+    "summary": "Practical evening chipper backup after camper collection; battered-sausage meal listed at €7.50. Confirm Tuesday opening.",
+    "source_file": "cheap-eats.md",
+    "source_heading": "Troy — practical budget chipper backup"
+  },
+  {
+    "id": "foxford-cafe",
+    "name": "Foxford Café",
+    "dates": [
+      "2026-11-04"
+    ],
+    "category": "food",
+    "summary": "Strong lunch option after the booked mill experience; published Wednesday café hours 10:00–16:00. The meal itself is optional.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "5. Foxford, Westport, Newport and Mulranny — November 4"
+  },
+  {
+    "id": "westport-creel-deli",
+    "name": "The Creel Deli",
+    "dates": [
+      "2026-11-04"
+    ],
+    "category": "food",
+    "summary": "Optional takeaway sausage-roll stop at the Quay, a diversion from the town centre. Published hours 09:00–17:00 daily; current roll price unconfirmed.",
+    "source_file": "cheap-eats.md",
+    "source_heading": "The Creel Deli, The Quay — sausage roll"
+  },
+  {
+    "id": "mulranny-nevins",
+    "name": "Nevin’s",
+    "dates": [
+      "2026-11-04"
+    ],
+    "category": "food",
+    "summary": "Practical optional dinner near the proposed overnight; current site lists daily food service. Overnight permission remains a separate matter.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "5. Foxford, Westport, Newport and Mulranny — November 4"
+  },
+  {
+    "id": "ballina-jack-fenn",
+    "name": "Jack Fenn Café & Bistro",
+    "dates": [
+      "2026-11-05"
+    ],
+    "category": "food",
+    "summary": "Optional lunch at Belleek Castle, with baking, sandwiches and seafood; a shorter stop fits the planned Sligo arrival more naturally than castle dinner.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "6. Downpatrick Head, Ballina and Enniscrone — November 5"
+  },
+  {
+    "id": "sligo-park-kitchen",
+    "name": "Park Kitchen",
+    "dates": [
+      "2026-11-05"
+    ],
+    "category": "food",
+    "summary": "Spice-bag option only if Sligo-town routing fits the planned Sligo arrival. Published collection starts 14:00; not a November 6 morning stop. Listed app price €9.50; parking unverified.",
+    "source_file": "cheap-eats.md",
+    "source_heading": "Park Kitchen, Calry Court, Stephen Street — spice bag priority"
+  },
+  {
+    "id": "slieve-league-ti-linn",
+    "name": "Tí Linn Café",
+    "dates": [
+      "2026-11-06"
+    ],
+    "category": "food",
+    "summary": "Easiest optional cliffs lunch; operator recommends Donegal chowder. Keep the planned 14:00 departure from Slieve League.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "8. Slieve League and Ballyshannon — November 6"
+  },
+  {
+    "id": "ballyshannon-golden-dragon",
+    "name": "Golden Dragon",
+    "dates": [
+      "2026-11-06"
+    ],
+    "category": "food",
+    "summary": "Pre-concert takeaway fallback after parking for the night. Listings show 16:30 opening; confirm Friday hours, menu and payment. Spice bag not verified; preserve no driving after concert.",
+    "source_file": "cheap-eats.md",
+    "source_heading": "Golden Dragon, Market Street — pre-concert Chinese takeaway backup"
+  },
+  {
+    "id": "galway-kai",
+    "name": "Kai",
+    "dates": [
+      "2026-11-07"
+    ],
+    "category": "food",
+    "summary": "Optional Saturday dinner requiring reservation; no booking established. Closed Sunday and Monday, so exclude November 8–9. Lunch is walk-in.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "9. Galway — November 7–9"
+  },
+  {
+    "id": "galway-ard-bia",
+    "name": "Ard Bia at Nimmos",
+    "dates": [
+      "2026-11-08"
+    ],
+    "category": "food",
+    "summary": "Optional Sunday brunch by Spanish Arch; published weekend brunch hours 10:00–15:00.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "9. Galway — November 7–9"
+  },
+  {
+    "id": "galway-magpie-bakery",
+    "name": "Magpie Bakery",
+    "dates": [
+      "2026-11-07",
+      "2026-11-08"
+    ],
+    "category": "food",
+    "summary": "Weekend sausage-roll option, especially after Sunday Cathedral Mass; published weekend hours 10:00–15:00. Closed Monday and Tuesday. €4 price is dated July 2025, not current.",
+    "source_file": "cheap-eats.md",
+    "source_heading": "Magpie Bakery, Unit 12, The Cornstore — sausage-roll priority"
+  },
+  {
+    "id": "galway-xian-quay",
+    "name": "Xi’an Street Food, Quay Street",
+    "dates": [
+      "2026-11-07",
+      "2026-11-08"
+    ],
+    "category": "food",
+    "summary": "Optional spice-bag takeaway; collection menu listed €9.50. Published Saturday service until 02:00, Sunday–Thursday until midnight; useful after music.",
+    "source_file": "cheap-eats.md",
+    "source_heading": "Xi'an Street Food, 9 Quay Street — spice bag"
+  },
+  {
+    "id": "galway-tigh-neachtain",
+    "name": "Tigh Neachtain",
+    "dates": [
+      "2026-11-07",
+      "2026-11-08",
+      "2026-11-09"
+    ],
+    "category": "drink",
+    "summary": "Optional snug, whiskey or craft-beer stop; published lunch daily 12:00–16:00.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "9. Galway — November 7–9"
+  },
+  {
+    "id": "dublin-delahunt",
+    "name": "Delahunt",
+    "dates": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "category": "food",
+    "summary": "Optional Irish dinner in a historic setting; published service includes Wednesday and Thursday. Sitting Room is a cocktail possibility. No reservation established.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "10. Dublin — November 11–12"
+  },
+  {
+    "id": "dublin-declan-donal",
+    "name": "Declan & Donal’s",
+    "dates": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "category": "food",
+    "summary": "Daytime north-side chicken-roll option; official menu listed hot chicken roll at €7. Requires walking beyond central Dublin; current service hours need confirmation.",
+    "source_file": "cheap-eats.md",
+    "source_heading": "Declan & Donal's, 34 Bolton Street — chicken fillet roll priority"
+  },
+  {
+    "id": "dublin-bread41",
+    "name": "Bread 41",
+    "dates": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "category": "food",
+    "summary": "Optional sausage roll in central Dublin; published hours 07:00–15:00 daily. €5.70 price is dated July 2025 and needs confirmation.",
+    "source_file": "cheap-eats.md",
+    "source_heading": "Bread 41, 41 Pearse Street — sausage roll"
+  },
+  {
+    "id": "athlone-saints-peter-paul",
+    "name": "Saints Peter and Paul’s Church",
+    "dates": [
+      "2026-11-02",
+      "2026-11-10"
+    ],
+    "category": "activity",
+    "summary": "Short stained-glass stop paired with the riverside; suitable for a gentle arrival day.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "1. Athlone — November 2 and 10"
+  },
+  {
+    "id": "athlone-old-rail-trail",
+    "name": "Old Rail Trail",
+    "dates": [
+      "2026-11-02",
+      "2026-11-10"
+    ],
+    "category": "activity",
+    "summary": "Walk a short section if energy and daylight allow; no need to commit to cycling.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "1. Athlone — November 2 and 10"
+  },
+  {
+    "id": "athlone-luan-gallery",
+    "name": "Luan Gallery",
+    "dates": [
+      "2026-11-10"
+    ],
+    "category": "culture",
+    "summary": "Contemporary art beside the Shannon; closed Mondays, so use November 10 rather than arrival day.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "1. Athlone — November 2 and 10"
+  },
+  {
+    "id": "athlone-bastion-gallery",
+    "name": "Bastion Gallery",
+    "dates": [
+      "2026-11-10"
+    ],
+    "category": "shop",
+    "summary": "Irish craft and Ogham jewellery; published Tuesday noon–17:00, but confirm current hours before visiting.",
+    "source_file": "independent-makers.md",
+    "source_heading": "Bastion Gallery — 6 Bastion Street, Athlone"
+  },
+  {
+    "id": "roscommon-castle",
+    "name": "Roscommon Castle and Loughnaneane Park",
+    "dates": [
+      "2026-11-03",
+      "2026-11-09",
+      "2026-11-10"
+    ],
+    "category": "activity",
+    "summary": "An easy town option if about an hour is available; protect pickup, servicing and return deadlines.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "2. Roscommon and surroundings — November 3 and 9–10"
+  },
+  {
+    "id": "carrick-leitrim-design-house",
+    "name": "Leitrim Design House",
+    "dates": [
+      "2026-11-03"
+    ],
+    "category": "shop",
+    "summary": "Irish-made craft at The Dock; published weekday 10:00–18:00. Choose a brief stop after the late camper handover.",
+    "source_file": "independent-makers.md",
+    "source_heading": "Leitrim Design House — The Dock, Carrick-on-Shannon"
+  },
+  {
+    "id": "boyle-drumanilra-organic-farm",
+    "name": "Drumanilra Organic Farm",
+    "dates": [
+      "2026-11-03",
+      "2026-11-04"
+    ],
+    "category": "farm",
+    "summary": "Enquiry lead only: no standing November tour verified. Requires an arranged visit and a schedule change around pickup or Foxford.",
+    "source_file": "farms-and-rural-industries.md",
+    "source_heading": "3. Drumanilra Organic Farm — near Boyle and Lough Key"
+  },
+  {
+    "id": "foxford-mill-shop",
+    "name": "FOXFORD mill shop",
+    "dates": [
+      "2026-11-04"
+    ],
+    "category": "shop",
+    "summary": "Browse within the existing café/shop window after the booked 11:30 experience; ask which products were woven there.",
+    "source_file": "independent-makers.md",
+    "source_heading": "FOXFORD mill shop — Foxford"
+  },
+  {
+    "id": "newport-burrishoole-abbey",
+    "name": "Burrishoole Abbey",
+    "dates": [
+      "2026-11-04"
+    ],
+    "category": "activity",
+    "summary": "Atmospheric waterside ruin just off the N59 between Westport and Nevin’s; camper stopping arrangements need checking.",
+    "source_file": "ruins-and-abbeys.md",
+    "source_heading": "5. Burrishoole Abbey — near Newport, County Mayo"
+  },
+  {
+    "id": "westport-carrowholly-stables",
+    "name": "Carrowholly Stables",
+    "dates": [
+      "2026-11-04"
+    ],
+    "category": "riding",
+    "summary": "First riding enquiry for Monica; allow roughly two hours on-site for a one-hour ride. Replaces Westport time; confirm pace, tide, availability and camper waiting permission.",
+    "source_file": "horse-riding.md",
+    "source_heading": "1. Carrowholly Stables — near Westport, County Mayo"
+  },
+  {
+    "id": "newport-croagh-patrick-seafoods",
+    "name": "Croagh Patrick Seafoods",
+    "dates": [
+      "2026-11-04"
+    ],
+    "category": "farm",
+    "summary": "Private winter shellfish-farm tours offered on request; confirm minimum charge, timing and camper access. Choose instead of other afternoon outings.",
+    "source_file": "farms-and-rural-industries.md",
+    "source_heading": "4. Croagh Patrick Seafoods — Roslaher, near Newport, County Mayo"
+  },
+  {
+    "id": "killala-rosserk-friary",
+    "name": "Rosserk Franciscan Friary",
+    "dates": [
+      "2026-11-05"
+    ],
+    "category": "activity",
+    "summary": "Priority secluded Gothic ruin if taking the Killala route toward Ballina; public daylight access, camper parking unconfirmed.",
+    "source_file": "ruins-and-abbeys.md",
+    "source_heading": "2. Rosserk Franciscan Friary — Moy estuary, north of Ballina"
+  },
+  {
+    "id": "ballycastle-doonfeeny-stone",
+    "name": "Doonfeeny Standing Stone",
+    "dates": [
+      "2026-11-05"
+    ],
+    "category": "activity",
+    "summary": "Short candidate near Downpatrick Head; use the established graveyard entrance. Camper parking and turning space unverified.",
+    "source_file": "folklore-and-ancient-sites.md",
+    "source_heading": "Doonfeeny Standing Stone"
+  },
+  {
+    "id": "ballina-four-maols",
+    "name": "Dolmen of the Four Maols",
+    "dates": [
+      "2026-11-05"
+    ],
+    "category": "activity",
+    "summary": "Ancient-site option behind Ballina station; verify the walking approach and parking before stopping.",
+    "source_file": "folklore-and-ancient-sites.md",
+    "source_heading": "Dolmen of the Four Maols — Table of the Giants"
+  },
+  {
+    "id": "easkey-rosies-pottery",
+    "name": "Rosie’s Pottery and Crafts",
+    "dates": [
+      "2026-11-05"
+    ],
+    "category": "shop",
+    "summary": "Working pottery studio on the optional coastal R297; confirm November opening and choose the coastal route deliberately.",
+    "source_file": "independent-makers.md",
+    "source_heading": "Rosie's Pottery and Crafts — Easkey"
+  },
+  {
+    "id": "strandhill-knocknarea-farm",
+    "name": "Knocknarea Farm",
+    "dates": [
+      "2026-11-05"
+    ],
+    "category": "farm",
+    "summary": "Strong mixed-farm lead with advertised 60–90-minute tours. Arrange November access, price and parking; replace other stops to preserve the planned Sligo arrival.",
+    "source_file": "farms-and-rural-industries.md",
+    "source_heading": "1. Knocknarea Farm — Strandhill, County Sligo"
+  },
+  {
+    "id": "strandhill-voya-seaweed-baths",
+    "name": "VOYA seaweed bath",
+    "dates": [
+      "2026-11-05"
+    ],
+    "category": "activity",
+    "summary": "Optional steam and seaweed-bath outing; published daily 09:45–18:00 does not establish availability. Allocate time instead of extra sightseeing.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "7. West Sligo, Strandhill and Sligo town — November 5"
+  },
+  {
+    "id": "cliffoney-creevykeel",
+    "name": "Creevykeel Court Tomb and wishing trees",
+    "dates": [
+      "2026-11-06",
+      "2026-11-07"
+    ],
+    "category": "activity",
+    "summary": "Allow roughly 20–30 minutes only if timing permits. Small visitor car park: assess camper space before entering; preserve cliff or Galway deadlines.",
+    "source_file": "folklore-and-ancient-sites.md",
+    "source_heading": "Creevykeel Court Tomb and entrance wishing trees"
+  },
+  {
+    "id": "kilcar-studio-donegal",
+    "name": "Studio Donegal",
+    "dates": [
+      "2026-11-06"
+    ],
+    "category": "shop",
+    "summary": "Working handweaving mill: published Friday weaving 09:00–16:00, shop to 17:30. Confirm work and camper parking; protect cliffs departure by 14:00.",
+    "source_file": "independent-makers.md",
+    "source_heading": "Studio Donegal — The Glebe Mill, Kilcar"
+  },
+  {
+    "id": "ballyshannon-rory-gallagher",
+    "name": "Rory Gallagher landmarks and town wander",
+    "dates": [
+      "2026-11-06"
+    ],
+    "category": "activity",
+    "summary": "Short optional town stroll after parking and before dinner; protect concert timing and no driving afterward.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "8. Slieve League and Ballyshannon — November 6"
+  },
+  {
+    "id": "galway-charlie-byrnes",
+    "name": "Charlie Byrne’s Bookshop",
+    "dates": [
+      "2026-11-07",
+      "2026-11-08",
+      "2026-11-09"
+    ],
+    "category": "shop",
+    "summary": "Irish folklore, archaeology and local-history browsing; Monday morning best fit. Published Monday opening 09:00; Sunday 11:00–17:00.",
+    "source_file": "independent-makers.md",
+    "source_heading": "Charlie Byrne's Bookshop — The Cornstore, Middle Street"
+  },
+  {
+    "id": "galway-latin-quarter-walk",
+    "name": "Galway streets, Spanish Arch and waterfront",
+    "dates": [
+      "2026-11-07",
+      "2026-11-08",
+      "2026-11-09"
+    ],
+    "category": "activity",
+    "summary": "Flexible city wander between festival commitments; keep camper parked and use walking, bus or taxi.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "9. Galway — November 7–9"
+  },
+  {
+    "id": "headford-ross-errilly",
+    "name": "Ross Errilly Franciscan Friary",
+    "dates": [
+      "2026-11-09"
+    ],
+    "category": "activity",
+    "summary": "Top secluded-ruin choice, requiring a deliberate route diversion. Public daylight access; narrow approach road and camper suitability need checking.",
+    "source_file": "ruins-and-abbeys.md",
+    "source_heading": "1. Ross Errilly Franciscan Friary — near Headford, County Galway"
+  },
+  {
+    "id": "galway-moycullen-riding",
+    "name": "Moycullen Riding Centre",
+    "dates": [
+      "2026-11-09"
+    ],
+    "category": "riding",
+    "summary": "Monday-morning riding alternative for Monica; confirm single-rider pace, exact yard versus beach meeting point and camper waiting. Allow checkout and 14:00 departure.",
+    "source_file": "horse-riding.md",
+    "source_heading": "2. Moycullen Riding Centre — near Galway"
+  },
+  {
+    "id": "abbeyknockmoy-abbey",
+    "name": "Abbeyknockmoy Cistercian Abbey",
+    "dates": [
+      "2026-11-09"
+    ],
+    "category": "activity",
+    "summary": "Strong optional ruin near the N63 departure corridor; short walk and stepped stile, challenging access. Check parking and preserve servicing time.",
+    "source_file": "ruins-and-abbeys.md",
+    "source_heading": "7. Abbeyknockmoy Cistercian Abbey — northeast of Galway"
+  },
+  {
+    "id": "dublin-henrietta-street",
+    "name": "14 Henrietta Street",
+    "dates": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "category": "activity",
+    "summary": "Guided tenement-history priority; Wednesday–Sunday opening matches the dates. Booking required; no reservation recorded.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "10. Dublin — November 11–12"
+  },
+  {
+    "id": "dublin-kilmainham-gaol",
+    "name": "Kilmainham Gaol",
+    "dates": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "category": "activity",
+    "summary": "Alternative major history visit; allow about 90 minutes. Book via official site, with tickets released 28 days ahead; availability unverified.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "10. Dublin — November 11–12"
+  },
+  {
+    "id": "dublin-national-museum-archaeology",
+    "name": "National Museum—Archaeology",
+    "dates": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "category": "activity",
+    "summary": "Bog bodies and early Irish objects, in central Dublin; optional central-city visit, with current date-specific arrangements to recheck.",
+    "source_file": "activities-and-food.md",
+    "source_heading": "10. Dublin — November 11–12"
+  },
+  {
+    "id": "dublin-irish-design-shop",
+    "name": "Irish Design Shop",
+    "dates": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "category": "shop",
+    "summary": "First Dublin craft-shopping choice on Drury Street; combine with a central walk and check November opening.",
+    "source_file": "independent-makers.md",
+    "source_heading": "Irish Design Shop — 41 Drury Street"
+  },
+  {
+    "id": "dublin-airfield-estate",
+    "name": "Airfield Estate",
+    "dates": [
+      "2026-11-12"
+    ],
+    "category": "farm",
+    "summary": "Dedicated Dundrum outing: working livestock farm and organic garden. Confirm November programme; published egg talk 10:00, milking 10:30 and farm talk 15:00.",
+    "source_file": "farms-and-rural-industries.md",
+    "source_heading": "7. Airfield Estate — Dundrum, Dublin"
+  },
+  {
+    "id": "galway-city-museum",
+    "name": "Galway City Museum",
+    "dates": [
+      "2026-11-07"
+    ],
+    "category": "culture",
+    "summary": "Free local-history alternative, published Saturday 10:00–17:00 (galleries 16:45); winter Sunday/Monday closed. Replaces some Going Coastal time, not a reliable stop before 13:00. Check fresh closure notices.",
+    "source_file": "art-culture-and-music.md",
+    "source_heading": "Galway City Museum — Saturday alternative"
+  },
+  {
+    "id": "dublin-national-gallery",
+    "name": "National Gallery of Ireland",
+    "dates": [
+      "2026-11-11",
+      "2026-11-12"
+    ],
+    "category": "culture",
+    "summary": "Free permanent collection; Nov 11 only after arrival from Athlone. Published Wed 09:15–17:30, Thu to 20:30; galleries clear earlier, short-notice closures possible. Prefer daytime Nov 12 to keep the final evening flexible.",
+    "source_file": "art-culture-and-music.md",
+    "source_heading": "National Gallery of Ireland — flexible central art visit"
+  },
+  {
+    "id": "galway-ralph-mctell-2026-11-08",
+    "name": "Ralph McTell at Town Hall Theatre",
+    "dates": [
+      "2026-11-08"
+    ],
+    "category": "culture",
+    "summary": "Official listing: Nov 8 at 20:00, €34, 120 minutes including interval. No tickets bought or seats checked. Replaces 19:00 Going Coastal finale; plan dinner and do not assume 18:00 Plámás also fits. Camper stays parked, hotel parking unresolved.",
+    "source_file": "art-culture-and-music.md",
+    "source_heading": "Ralph McTell — November 8 Galway concert alternative"
+  },
+  {
+    "id": "dublin-anna-von-hausswolff-2026-11-11",
+    "name": "Anna von Hausswolff at National Concert Hall",
+    "dates": [
+      "2026-11-11"
+    ],
+    "category": "culture",
+    "summary": "Artist confirms Nov 11, 2026 Dublin NCH date. Exact start/end, price and remaining seats unverified; no ticket bought. Alternative first Dublin evening after Athlone travel, pending venue timing check.",
+    "source_file": "art-culture-and-music.md",
+    "source_heading": "Anna von Hausswolff — November 11 Dublin lead"
+  },
+  {
+    "id": "dublin-john-cooper-clarke-2026-11-12",
+    "name": "John Cooper Clarke at 3Olympia",
+    "dates": [
+      "2026-11-12"
+    ],
+    "category": "culture",
+    "summary": "Venue lists Nov 12, doors 19:00; from €38.15. Stage/finish unknown, no tickets bought. Late-evening alternative with an unknown finish; consider final-night rest.",
+    "source_file": "art-culture-and-music.md",
+    "source_heading": "John Cooper Clarke — November 12 spoken-word alternative"
+  }
+]

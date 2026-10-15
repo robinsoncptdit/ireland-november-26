@@ -4,7 +4,7 @@ A public travel guide built with **Quartz 5, GitHub Pages, Giscus and Hypothesis
 
 ## What lives where
 
-- `content/`: the **only public Markdown source**, nine explicitly allowed pages. Edit these files to change the site. Their filenames are stable URLs; ordinary title edits are safe.
+- `content/`: the **only public Markdown source**, eleven explicitly allowed pages. Edit these files to change the site. Their filenames are stable URLs; ordinary title edits are safe.
 - `private/originals/`: the complete original guides, full personal itinerary and WhatsApp contacts. Local only, ignored before Git initialization. Back up privately; Git cannot restore ignored files.
 - `site/`: shared reading styles, collaboration script and public integration settings. IDs here are public identifiers, never credentials.
 - `scripts/`: build, checks and local preview.
@@ -74,3 +74,11 @@ Update dependencies on a branch, review lockfile changes, build and preview befo
 - [GitHub Pages availability and project URLs](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 - [Giscus setup and permissions](https://giscus.app)
 - [Hypothesis embed](https://web.hypothes.is/help/embedding-hypothesis-in-websites-and-platforms/) and [configuration](https://h.readthedocs.io/projects/client/en/latest/publishers/config.html)
+
+## Daily guide and proposal workflow
+
+`data/guide-options.json` contains public-safe suggestions, candidate dates and links to topic research. `scripts/build-daily-guide.mjs` builds `content/daily-travel-guide.md` from those options and the existing public itinerary, preserving its baseline text. The normal build regenerates this page first. It uses only public sources, with no dependency on local private files.
+
+The daily guide separates the adopted itinerary summary from unadopted wiki options. Comments and annotations may originate new proposals or revisions; publishing a wiki change does not adopt it into Wanderlog. Preserve attribution and sources when incorporating discussion, and use PRs for public changes. The arts guide records checked details and uncertainty; advertised tickets are not bookings.
+
+The complete local planning workflow, decisions, research snapshots and full guide are preserved under ignored `private/trip-guide/`. They are local-only and are not included in this repository or deployment. Deliberately refresh private snapshots when the authoritative plan changes; do not automatically synchronize the older Documents workspace. Public changes remain deliberate edits to public sources.

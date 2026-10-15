@@ -3,7 +3,7 @@ import path from 'node:path'
 import {createHash} from 'node:crypto'
 import {execFileSync} from 'node:child_process'
 const mode=process.argv[2]||'all'
-const allowed=['index','itinerary','activities-and-food','folklore-and-ancient-sites','ruins-and-abbeys','farms-and-rural-industries','independent-makers','cheap-eats','horse-riding']
+const allowed=['index','itinerary','activities-and-food','folklore-and-ancient-sites','ruins-and-abbeys','farms-and-rural-industries','independent-makers','cheap-eats','horse-riding','art-culture-and-music','daily-travel-guide']
 const forbidden=[/wanderlog\.com\/plan/i,/\bDL\d{3,4}\b/,/two separate (hotel )?rooms/i]
 const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isSymbolicLink()?(()=>{throw Error(`Symlink prohibited: ${d}/${e.name}`)})():e.isDirectory()?walk(path.join(d,e.name)):[path.join(d,e.name)])
 const privateWordHashes=new Set(['b7095965389e1bdb4e70408d13fb8bc405aa386b92de6703c5d83acb58c5715a', '04509b0f5f15080ce519d709f84396a2fcf9502e179c6b988e5e6ec38b367694'])
