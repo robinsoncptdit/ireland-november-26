@@ -32,17 +32,17 @@ Keep research dates, source links, uncertainty and recorded-versus-confirmed boo
 
 Readers need no account. **Edit this guide** opens the Markdown on GitHub. Friends can fork and propose a pull request. Repository collaborators must also use a branch and PR, not commit straight to main. Review content and privacy before merging. The workflow builds PRs but uploads and deploys **only main**, after accepted changes. It does not use `pull_request_target`, secrets or a custom backend.
 
-Before first publication, obtain explicit owner approval for the preview and public inventory. The repository does not exist yet; after approval, create the public repository `robinsoncptdit/ireland-november-26`, push the reviewed local history, and choose **Settings → Pages → Source: GitHub Actions**. The address will be https://robinsoncptdit.github.io/ireland-november-26/ . No domain, paid hosting or trial is needed. Public GitHub repositories support free Pages hosting and standard Actions runners.
+The owner approved public publication on October 15, 2026. The public repository is `robinsoncptdit/ireland-november-26`; Pages uses GitHub Actions and main requires PRs with passing build checks. Initial website deployment is held until the owner installs Giscus and its connection is verified. The address is https://robinsoncptdit.github.io/ireland-november-26/ . No domain, paid hosting or trial is needed. Public GitHub repositories support free Pages hosting and standard Actions runners.
 
 Set a main-branch ruleset requiring a pull request and the `build` status check. Allow no bypass if practical, and block force pushes/deletion. With two trusted maintainers, require a reviewer other than the author; with a single maintainer, require PRs and checks without an impossible second-person approval. CI prevents PR deployment; branch rules enforce review for repository writers.
 
 Do not publish until Giscus is connected (the release check blocks publication when IDs are missing):
 
 1. Enable **Settings → General → Features → Discussions** on the repository.
-2. Create a **Guide discussion** category using the **Announcements** format.
+2. Use the existing **Announcements** discussion category (already configured).
 3. Install the [Giscus GitHub App](https://github.com/apps/giscus) for **only this repository**. This permission step belongs to the account owner.
-4. On [giscus.app](https://giscus.app), enter the repository and category. Copy `data-repo-id` and `data-category-id` into `site/settings.json` (`giscus.repoId` and `giscus.categoryId`). Keep the existing specific-term mapping in our script.
-5. Rebuild, run `node scripts/release-check.mjs`, preview and test the real Giscus frame. Then push the accepted change to main and watch the Pages workflow.
+4. Repository and category IDs have been discovered and saved in `site/settings.json`. On [giscus.app](https://giscus.app), enter the repository to verify that the installation is accepted. Keep the existing specific-term mapping in our script.
+5. Rebuild, run `node scripts/release-check.mjs`, preview and test the real Giscus frame. Merge the integration PR only after that connection succeeds, then watch the Pages workflow.
 
 Each guide uses an immutable Giscus term `ireland-2026/<filename-without-md>`, strict matching and reactions. Do not change filenames/terms after discussions exist. If moving a page, preserve the old URL with a redirect and retain its discussion term; update the build implementation deliberately. Hypothesis uses the canonical production URL, so keep URLs stable. Avoid saving test annotations from localhost because the canonical URL points at the future live guide.
 
