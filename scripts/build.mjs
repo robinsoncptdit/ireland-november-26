@@ -7,6 +7,6 @@ run(['scripts/configure.mjs'])
 fs.rmSync('public',{recursive:true,force:true})
 run(['quartz/bootstrap-cli.mjs','build','-d','content','-o','public'])
 run(['scripts/enhance.mjs'])
-run(['scripts/check.mjs','output'])
+run(['scripts/check.mjs','artifact'])
 
 run(['scripts/links.mjs'])

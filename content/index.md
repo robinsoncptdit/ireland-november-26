@@ -7,6 +7,8 @@ date: 2026-10-15
 
 Atlantic headlands, quiet abbeys, working mills and a warm place to eat. This is a shared notebook for exploring Ireland together—built around a real route, with room to choose what feels right on the day.
 
+[New here? Read how to use the guide →](howto.md)
+
 ## Start with the journey
 
 [Read the November itinerary →](itinerary.md)

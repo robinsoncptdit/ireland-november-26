@@ -1,6 +1,6 @@
 {
   "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
+  "description": "\ud83c\udf31 publish your digital garden and notes as a website",
   "private": true,
   "version": "5.0.0",
   "type": "module",
@@ -21,7 +21,11 @@
     "install-plugins": "npx tsx ./quartz/plugins/loader/install-plugins.ts",
     "build": "node scripts/build.mjs",
     "preview": "node scripts/preview.mjs",
-    "privacy:check": "node scripts/check.mjs all"
+    "privacy:check": "node scripts/check.mjs all",
+    "guide:status": "node scripts/guide-queue.mjs status",
+    "guide:stage": "node scripts/guide-queue.mjs stage",
+    "guide:commit": "node scripts/guide-queue.mjs commit",
+    "guide:test": "node --test scripts/build-daily-guide.test.mjs scripts/guide-queue.test.mjs"
   },
   "engines": {
     "npm": ">=10.9.2",
